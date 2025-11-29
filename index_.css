@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    background: #F8F8F8;
+    max-width: 1360px;
+    width: 100%;
+    font-weight: 400;    
+    margin: 0 auto;        
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-top: 24px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EFA300;
+}
+
+h1 {
+    color: #EFA300;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 100px; 
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 100px 0px 50px 115px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px;
+    font-style: italic;
+    text-align: left;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 0px 35px 0px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.first_block {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+.images {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+}
+
+.images img:nth-child(1) {
+    grid-row: span 2;
+}
+
+.images img:nth-child(3) {
+    grid-row: span 2;
+}
+
+.images img:nth-child(4) {
+    grid-row: span 2;
+}
+
+
+.fifth_block {
+    margin-bottom: 100px;
+}
+
+.text_block {
+    max-width: 900px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.fpicture {
+    max-width: 900px; 
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.pic-container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto; /* Центрирование */
+}
+
+.pic {
+    width: 100%;
+    height: auto; /* Сохраняет пропорции */
+    max-height: 479px;
+    object-fit: cover;
+    display: block;
+}
+
+.logo {
+    max-width: 210px; 
+    max-height: 116px; 
+}
+
+.icons {
+    max-width: 325px; 
+    max-height: 40px; 
+    margin: 30px 0px 0px 0px; 
+}
+
+.ftext {
+    max-width: 440px;
+    width: 100%;
+}
+
+p {
+    font-size: 24px;
+    text-align: left;
+}
+
+.btn {
+    background: #001AFF;
+    color: #F8F8F8;
+    padding: 20px 105px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    border: none;   
+}
+
+.btn:hover {
+    background: #EFA300; 
+}
+
+.btn:active {
+    background: #F8F8F8;
+    color: #001AFF;
+    outline: 5px solid #001AFF;
+}
+
+.title, .accordion-header {
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.title { 
+    margin: 20px 0 10px 0;
+}
+
+.accordion-header { 
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+input[type="checkbox"] { display: none; }
+
+.accordion-content {
+    display: none;
+    padding: 10px 0px;
+}
+
+input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+    display: block;
+}
+
+input[type="checkbox"]:checked + .accordion-header .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    float: right;
+    transition: transform 0.3s;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    margin-top: 100px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.logo {
+    max-width: 210px;
+    height: auto;
+}
+
+.foot {
+    text-align: left;
+    text-transform: none;
+}
+
+.flinks1, .flinks2, .flinks3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 10px;
+    text-align: left;
+}
+
+.flinks1 {
+    text-transform: uppercase;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.icon:hover { 
+    color: #EFA300; 
+}

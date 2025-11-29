@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    background: #F8F8F8;
+    max-width: 1360px;
+    width: 100%;
+    font-weight: 400;    
+    margin: 0 auto;        
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-top: 24px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.price {
+    font-size: 24px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.name {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.card {
+    max-width: 440px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EFA300;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 70px 0px 50px 115px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 0px 35px 0px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #001AFF;
+    color: #F8F8F8;
+    font-size: 20px;
+    max-width: 440px;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    text-transform: uppercase;
+    border: none;   
+}
+
+.btn:hover { 
+    background: #EFA300; 
+}
+
+.btn:active {
+    background: #F8F8F8;
+    color: #001AFF;
+    outline: 5px solid #001AFF;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    margin-top: 100px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.logo {
+    max-width: 210px;
+    width: 100%;
+    height: auto;
+}
+
+.foot {
+    text-align: left;
+    text-transform: none;
+}
+
+.flinks1, .flinks2, .flinks3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    text-align: left;
+}
+
+.flinks1 {
+    text-transform: uppercase;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.icon:hover { 
+    color: #EFA300; 
+}
