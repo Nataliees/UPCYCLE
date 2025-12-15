@@ -173,16 +173,18 @@ p {
 }
 
 .btn {
+    display: inline-block;
     background: #001AFF;
     color: #F8F8F8;
     padding: 1.25rem 6.5625rem;
     margin-top: 1.875rem;
     text-transform: uppercase;
-    border: none;   
+    text-decoration: none;
 }
 
 .btn:hover {
-    background: #EFA300; 
+    background: #EFA300;
+    color: #F8F8F8;
 }
 
 .btn:active {
@@ -190,6 +192,7 @@ p {
     color: #001AFF;
     outline: 5px solid #001AFF;
 }
+
 
 .title, .accordion-header {
     font-size: 1.5rem;
@@ -236,19 +239,17 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.3125rem, 1fr));
     margin-top: 6.25rem;
-    margin-bottom: 1.25rem;
-    gap: 2rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
 }
 
 .logo {
     max-width: 13.125rem;
+    width: 100%;
     height: auto;
-    flex: 0 0 auto;
 }
 
 .foot {
@@ -260,10 +261,8 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 1.25rem;
-    font-weight: 400;
-    gap: 0.525rem;
+    gap: 0.625rem;
     text-align: left;
-    flex: 1 1 18.75rem;
 }
 
 .flinks1 {
@@ -278,6 +277,6 @@ footer {
     margin-top: 1.875rem;
 }
 
-.icon:hover {
-    color: #EFA300;
+.icon:hover { 
+    color: #EFA300; 
 }
