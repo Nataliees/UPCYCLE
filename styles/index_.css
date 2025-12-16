@@ -151,7 +151,7 @@ h4 {
 .pic {
     width: 100%;
     height: auto;
-    max-height: 29,9375rem;
+    max-height: 29.9375rem;
     object-fit: cover;
     display: block;
 }
@@ -162,7 +162,7 @@ h4 {
 }
 
 .icons {
-    max-width: 20,3125rem; 
+    max-width: 20.3125rem; 
     max-height: 2.5rem; 
     margin: 1.875rem 0 0 0; 
 }
@@ -239,17 +239,19 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20.3125rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 6.25rem;
-    margin-bottom: 1.5rem;
-    align-items: center;
+    margin-bottom: 1.25rem;
+    gap: 2rem;
 }
 
 .logo {
     max-width: 13.125rem;
-    width: 100%;
     height: auto;
+    flex: 0 0 auto;
 }
 
 .foot {
@@ -261,8 +263,10 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 1.25rem;
-    gap: 0.625rem;
+    font-weight: 400;
+    gap: 0.525rem;
     text-align: left;
+    flex: 1 1 18.75rem;
 }
 
 .flinks1 {
@@ -277,6 +281,6 @@ footer {
     margin-top: 1.875rem;
 }
 
-.icon:hover { 
-    color: #EFA300; 
+.icon:hover {
+    color: #EFA300;
 }
